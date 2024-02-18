@@ -7,8 +7,7 @@
 <!-- Provide a quick summary of the dataset. -->
 
 {{ Dataset Summary:
-This dataset consists of palm images. The dataset includes a total of 3867 images, each labeled as either anemic or non-anemic, with 2169 anemic and 1698 non-anemic instances.
- | default("", true) }}
+This dataset consists of palm images. The dataset includes a total of 3867 images, each labeled as either anemic or non-anemic, with 2169 anemic and 1698 non-anemic instances. }}
 
 ## Dataset Details
 
@@ -16,7 +15,7 @@ This dataset consists of palm images. The dataset includes a total of 3867 image
 
 <!-- Provide a longer summary of what this dataset is. -->
 
-{{ This dataset contains palm images collected from hospitals in the city of Accra, Ghana, for the purpose of anemia detection in children under the age of 5. The dataset consists of a total of 3867 images, each labeled as either anemic or non-anemic, with 2169 anemic and 1698 non-anemic instances. Region of Interest (ROI) has been applied to the images. | default("", true) }}
+{{ This dataset contains palm images collected from hospitals in the city of Accra, Ghana, for the purpose of anemia detection in children under the age of 5. The dataset consists of a total of 3867 images, each labeled as either anemic or non-anemic, with 2169 anemic and 1698 non-anemic instances. Region of Interest (ROI) has been applied to the images. }}
 
 - **Curated by:** {{ curators | default("[More Information Needed]", true)}}
 - **License:** {{ license | default("[More Information Needed]", true)}}
@@ -35,9 +34,7 @@ This dataset consists of palm images. The dataset includes a total of 3867 image
 
 ### Direct Use
 
-<!-- This section describes suitable use cases for the dataset. -->
-
-{{ direct_use | default("[More Information Needed]", true)}}
+This dataset can be directly used for training and evaluating machine learning models for anemia detection using palm images. It provides a suitable resource for researchers and practitioners in the field of healthcare diagnostics and machine learning.
 
 
 ## Dataset Structure
@@ -50,17 +47,18 @@ This dataset consists of palm images. The dataset includes a total of 3867 image
 
 ### Source Data
 
-<!-- This section describes the source data (e.g. news text and headlines, social media posts, translated sentences, ...). -->
+Data collected from hospitals in Africa, Ghana.
 
 #### Data Collection and Processing
 
-<!-- This section describes the data collection and processing process such as data selection criteria, filtering and normalization methods, tools and libraries used, etc. -->
+Palm images were collected from pediatric patients under the age of 5. Each image was labeled as anemic or non-anemic based on clinical diagnosis. Region of Interest (ROI) was applied to focus on relevant areas in the images.
 
-{{ data_collection_and_processing_section | default("[More Information Needed]", true)}}
+The dataset was divided into training, validation, and test subsets. The training dataset contains 80% of the original dataset, while the validation dataset contains the remaining 20%. The validation dataset was further split into 50% validation and 50% test subsets. The RGB color model was used for the images, and the images were resized to 224x224 dimensions. The rescale parameter was set to 1./255 to scale the pixel values of the images to the range [0,1]. A batch size of 32 was used.
 
 #### Features and the target
 
-<!-- This section describes the features of the dataset and the target of the project -->
+Features: Palm images with Region of Interest (ROI) applied
+Target: Anemia status (Anemic or Non-Anemic)
 
 ### Annotations [optional]
 
@@ -81,12 +79,12 @@ This dataset consists of palm images. The dataset includes a total of 3867 image
 
 ## Bias, Risks, and Limitations
 
-<!-- This section is meant to convey both technical and sociotechnical limitations. -->
-
-{{ bias_risks_limitations | default("[More Information Needed]", true)}}
+The dataset may have inherent biases due to its source from a specific geographic location and demographic.
+Annotator bias may also be present depending on the criteria used for labeling images.
+Limitations include potential variations in image quality and lighting conditions, which could affect model performance.
 
 
 ## Citation [optional]
 
-<!-- If there is a paper or blog post introducing the dataset, the APA and Bibtex information for that should go in this section. -->
+Asare, J. W. (2022). Anemia Detection using Palpable Palm Image Datasets from Ghana. Mendeley Data. https://doi.org/10.17632/ccr8cm22vz.1
 
