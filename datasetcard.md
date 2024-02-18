@@ -6,8 +6,7 @@
 
 <!-- Provide a quick summary of the dataset. -->
 
-{{ Dataset Summary:
-This dataset consists of palm images. The dataset includes a total of 3867 images, each labeled as either anemic or non-anemic, with 2169 anemic and 1698 non-anemic instances. }}
+Dataset Summary: This dataset consists of palm images. The dataset includes a total of 3867 images, each labeled as either anemic or non-anemic, with 2169 anemic and 1698 non-anemic instances. 
 
 ## Dataset Details
 
@@ -39,9 +38,13 @@ This dataset can be directly used for training and evaluating machine learning m
 
 ## Dataset Structure
 
-<!-- This section provides a description of the dataset fields, and additional information about the dataset structure such as criteria used to create the splits, relationships between data points, etc. -->
+The dataset consists of palm images collected for anemia detection in children under the age of 5. Each data point in the dataset includes the following fields:
 
-{{ dataset_structure | default("[More Information Needed]", true)}}
+Image: Palm image representing the sample.
+Label: Anemia status of the individual in the image, categorized as either "anemic" or "non-anemic".
+The dataset has been split into training, validation, and test subsets. The training dataset contains 80% of the original data, while the validation dataset comprises the remaining 20%. The validation dataset has been further divided into 50% for validation and 50% for testing.
+
+The images are represented in the RGB color model and have been resized to 224x224 dimensions. Pixel values of the images have been rescaled to the range [0,1]. The batch size used for processing is 32.
 
 ## Dataset Creation
 
