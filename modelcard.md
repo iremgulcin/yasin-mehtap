@@ -1,32 +1,28 @@
 ---
 # MODEL CARD
 
-# Model Card for {{ model_id | default("Model ID", true) }}
+# Model Card for Anemia Detection Model
 
-<!-- Provide a quick summary of what the model is/does. -->
-
-{{ model_summary | default("", true) }}
+This model detects anemia in children under the age of 5 using palm images.
 
 ## Model Details
 
 ### Model Description
 
-<!-- Provide a longer summary of what this model is. -->
+This model utilizes multiple pre-trained convolutional neural network (CNN) architectures, including CNN, MobileNetV2, VGG16, and InceptionV3, for the task of anemia detection using palm images. Each architecture brings its own strengths and characteristics to the task, allowing for a comprehensive exploration of different approaches to image classification.
 
-{{ model_description | default("", true) }}
-
-- **Developed by:** {{ developers | default("[More Information Needed]", true)}}
-- **Model date:** {{ model_date | default("[More Information Needed]", true)}}
-- **Model type:** {{ model_type | default("[More Information Needed]", true)}}
-- **Language(s):** {{ language | default("[More Information Needed]", true)}}
-- **Finetuned from model [optional]:** {{ base_model | default("[More Information Needed]", true)}}
+- **Developed by:** Mehtap Saatçı, Yasin Aksu
+- **Model date:** 23.01.2024
+- **Model type:** Convolutional Neural Network (CNN), Transfer Learning
+- **Language(s):** Python
+- **Finetuned from model [optional]:** [Pre-trained models include CNN, MobileNetV2, VGG16, and InceptionV3]
 
 ### Model Sources [optional]
 
 <!-- Provide the basic links for the model. -->
 
-- **Repository:** {{ repo | default("[More Information Needed]", true)}}
-- **Paper [optional]:** {{ paper | default("[More Information Needed]", true)}}
+- **Repository:** Asare, J. W. (2022). Anemia Detection using Palpable Palm Image Datasets from Ghana. Mendeley Data. https://doi.org/10.17632/ccr8cm22vz.1
+- **Paper [optional]:** Asare, J. W., Appiahene, P., Donkoh, E. T., & Dimauro, G. (2023). Iron deficiency anemia detection using machine learning models: A comparative study of fingernails, palm and conjunctiva of the eye images. Engineering Reports, 5(11). https://doi.org/10.1002/eng2.12667
 - **Demo [optional]:** {{ demo | default("[More Information Needed]", true)}}
 
 ## Uses
