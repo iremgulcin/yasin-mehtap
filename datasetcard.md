@@ -6,7 +6,9 @@
 
 <!-- Provide a quick summary of the dataset. -->
 
-{{ dataset_summary | default("", true) }}
+{{ Dataset Summary:
+This dataset consists of palm images. The dataset includes a total of 3867 images, each labeled as either anemic or non-anemic, with 2169 anemic and 1698 non-anemic instances.
+ | default("", true) }}
 
 ## Dataset Details
 
@@ -14,7 +16,7 @@
 
 <!-- Provide a longer summary of what this dataset is. -->
 
-{{ dataset_description | default("", true) }}
+{{ This dataset contains palm images collected from hospitals in the city of Accra, Ghana, for the purpose of anemia detection in children under the age of 5. The dataset consists of a total of 3867 images, each labeled as either anemic or non-anemic, with 2169 anemic and 1698 non-anemic instances. Region of Interest (ROI) has been applied to the images. | default("", true) }}
 
 - **Curated by:** {{ curators | default("[More Information Needed]", true)}}
 - **License:** {{ license | default("[More Information Needed]", true)}}
