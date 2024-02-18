@@ -2,7 +2,7 @@
 # Dataset Card
 ---
 
-# Dataset Card for {{ pretty_name | default("Dataset Name", true) }}
+# Dataset Card for Anemia Detection with Palm Images
 
 <!-- Provide a quick summary of the dataset. -->
 
